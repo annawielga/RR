@@ -1,6 +1,11 @@
 ﻿@{
     ViewBag.Title = "MyView";
+    
 }
+ 
+@model RR.Models.Member 
+
+    
 
 <!DOCTYPE html>
 
@@ -16,9 +21,14 @@
                 ViewData["Member"];
         }
         <b> Member details</b><br />
-        Member Name : @m.Name <br />
+        @*Member Name : @m.Name <br />
         Member Email  @m.Email<br />
-        Member Phone @m.Phone
+        Member Phone @m.Phone*@
+
+
+        Member Name : @Model.Name<br />
+        Member Email : @Model.Email<br />
+
 </div>
 </body>
 </html>
