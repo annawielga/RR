@@ -1,0 +1,24 @@
+﻿@{
+    ViewBag.Title = "MyView";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>MyView</title>
+</head>
+<body>
+    <div>
+        @{
+            RR.Models.Member m = (RR.Models.Member)
+                ViewData["Member"];
+        }
+        <b> Member details</b><br />
+        Member Name : @m.Name <br />
+        Member Email  @m.Email<br />
+        Member Phone @m.Phone
+</div>
+</body>
+</html>
